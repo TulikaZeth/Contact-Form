@@ -22,14 +22,20 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         document.getElementById('nameError').style.display = 'block';
         isValid = false;
     }
-
-   
-    const emailPattern = /^#$%^&*@]+@[^\s@]+\.[^\s@]+$/;
-    if (email === '' || !emailPattern.test(email)) {
-        document.getElementById('error-invalid-email').textContent = 'Valid email is required';
-        document.getElementById('error-invalid-email').style.display = 'block';
-        isValid = false;
+     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if(email === ' ' || !emailPattern.test(email))
+    {
+     document.getElementById('error-invalid-email').textContent = 'Valid email is required';
+    document.getElementById('error-invalid-email').style.display = 'block';
+    isValid = false;
     }
+   
+    // const emailPattern = /^#$%^&*@]+@[^\s@]+\.[^\s@]+$/;
+    // if (email === '' || !emailPattern.test(email)) {
+    //     document.getElementById('error-invalid-email').textContent = 'Valid email is required';
+    //     document.getElementById('error-invalid-email').style.display = 'block';
+    //     isValid = false;
+    // }
 
     
     const phonePattern = /^[0-9]{10}$/;
