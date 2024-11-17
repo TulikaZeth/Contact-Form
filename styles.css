@@ -1,3 +1,87 @@
+/* 
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(148, 38%, 91%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: auto;
+}
+
+h2 {
+    margin-top: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 20px;
+    display: none;
+}
+
+.submit-button, .reset-button {
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor:pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition:  hsl(147, 85%, 8%) 0.1s;
+}
+
+.submit-button:hover {
+    background-color: hsl(169, 66%, 40%);
+}
+
+.reset-buttonhover {
+    background-color: hsl(169, 66%, 40%);
+}
+ */
+
+
+
+
 
 
 body {
@@ -76,4 +160,44 @@ textarea {
 
 .reset-buttonhover {
     background-color: hsl(169, 66%, 40%);
+}
+@media only screen and (min-device-width: 500px) and (max-device-width: 8000px) {
+    .container {
+      display: hidden;
+    }
+  
+/* @media (min-width: 600px)  */
+
+
+    body {
+        flex-direction: column; 
+        padding: 10px;
+        background-color:  hsl(148, 38%, 91%);
+        height: auto;
+    }
+
+    .container {
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(100, 100, 100, 0.2);
+        max-width: 60%;
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+        margin-top: 20px;
+    }
+
+    label {
+        font-size: 0.9rem; 
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .submit-button, .reset-button {
+        font-size: 1rem; 
+        padding: 15px; 
+    }
 }
